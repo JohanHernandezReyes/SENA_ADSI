@@ -15,7 +15,7 @@ if BMI<=16.9:
 elif BMI<=18.4:
    resultado="Se encuentra bajo de peso"
 elif BMI<=24.9:
-   resultado="Tu peso es adecuado"  
+   resultado="Su peso es el adecuado"  
 elif BMI<=29.9:
    resultado="Se encuentra en sobrepeso"
 else:
