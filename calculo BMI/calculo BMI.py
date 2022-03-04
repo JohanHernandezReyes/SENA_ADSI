@@ -10,15 +10,17 @@ BMI=W/H**2
 print(f'su indice de masa corporal es {round(BMI, 2)}')
 
 resultado=""
-if BMI<=16.9:
+if BMI<=16.99:
    resultado="Se encuentra en delgadez severa"
-elif BMI<=18.4:
+elif BMI<=18.49:
    resultado="Se encuentra bajo de peso"
-elif BMI<=24.9:
+elif BMI<=24.99:
    resultado="Su peso es el adecuado"  
-elif BMI<=29.9:
+elif BMI<=29.99:
    resultado="Se encuentra en sobrepeso"
-else:
+elif BMI<=34.99:
    resultado="Presenta obesidad" 
+else:
+   resultado="Es clinicamente obeso" 
 
 print(resultado)   
