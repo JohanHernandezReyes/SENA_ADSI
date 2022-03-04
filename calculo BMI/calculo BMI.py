@@ -1,11 +1,11 @@
 #calculo BMI
 
 print("Ingrese su peso en kg:") 
-W=float(input()) 
+w=float(input()) 
 
 print("Ingrese su altura en mts:") 
-H=float(input())
-BMI=W/H**2
+h=float(input())
+BMI=w/h**2
 
 print(f'su indice de masa corporal es {round(BMI, 2)}')
 
