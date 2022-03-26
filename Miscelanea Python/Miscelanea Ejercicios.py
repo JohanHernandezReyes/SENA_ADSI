@@ -10,7 +10,7 @@ MenuPpal={1:"Operadores", 2:"Condicionales", 3:"Ciclos", 99:"Salir"}
 MsgError="Ingrese una opción correcta"
 
 Operadores={1:"Area del triangulo",
-            2:"Suma de 2 enteros",
+            2:"Suma de 2 números",
             3:"Potenciacion al cuadrado",
             4:"Conversor EUR-USD",
             5:"Area y perimetro del cuadrado",
@@ -59,7 +59,7 @@ def miscelanea(Tema):
             print("\n", str(Operadores[Ejercicio].upper()))
             if Ejercicio==1:
                 base, altura = input("Ingrese la base y la altura del triangulo separadas por un espacio:").split()
-                print("El area del triangulo es:", round((float(base)*float(altura))/2,2))
+                print("El area del triangulo es:", round((float(base)*float(altura))/2,2), "cm2")
             elif Ejercicio==2:
                 num1, num2 = input("Ingrese 2 numeros separados por un espacio:").split()
                 print("la suma de los numeros ingresados es:", float(num1)+float(num2))
@@ -136,7 +136,7 @@ def miscelanea(Tema):
                 if float(B)==0:
                     print("La división entre cero no está permitida")
                 else:
-                    cociente=float(A)/float(B)
+                    cociente=round(float(A)/float(B),2)
                     print(A, "/", B, "=", cociente)
             elif Ejercicio==6:
                 A, B = input("Ingrese 2 numeros diferentes separados por un espacio:").split()
@@ -170,15 +170,18 @@ def miscelanea(Tema):
             if Ejercicio==1:
                 for i in range(1,100):
                     if i%3==0:
-                        print(i)
+                        print(i, end=" ")
+                print("\n")        
             elif Ejercicio==2:
                 for i in range(101):
                     if i%2!=0:
-                        print(i)
+                        print(i, end=" ")
+                print("\n")
             elif Ejercicio==3:
                 for i in range(101):
                     if i%2==0:
-                        print(i)
+                        print(i, end=" ")
+                print("\n")
             elif Ejercicio==4:
                 for i in range(1, 31):
                     print(f'{i}^2={i**2}')
@@ -192,8 +195,9 @@ def miscelanea(Tema):
                 while int(A)>=int(B):
                     print("B debe ser mayor que A. Ingrese los datos nuevamente:")
                     A, B = input("Ingrese 2 numeros (A y B) separados por un espacio, donde B sea mayor que A:").split()
-                for i in range(int(A),int(B)):
-                    print(i)
+                for i in range(int(A)+1,int(B)):
+                    print(i, end=" ")
+                print("\n")
             elif Ejercicio==7:
                 num = float(input("Digite un numero diferente de cero:"))
                 suma=0
@@ -213,9 +217,9 @@ def miscelanea(Tema):
 def salir(Tema):
     if Tema==99:
         print("Ha elegido salir del programa")
-        confirm=input("Esta seguro? S/N\n").upper()
-        while confirm !="S":
-            if confirm=="N":
+        confirm=input("Esta seguro? S/N\n")
+        while confirm.upper() !="S":
+            if confirm.upper()=="N":
                 print("Regresando al Menú Principal...")
                 Tema=MenuPrincipal()   
                 miscelanea(Tema)
