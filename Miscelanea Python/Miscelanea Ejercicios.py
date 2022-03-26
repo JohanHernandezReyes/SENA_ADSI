@@ -114,6 +114,8 @@ def miscelanea(Tema):
                 mayor=num1
                 if float(num2)>float(num1):
                     mayor=num2
+                    if float(num3)>float(num2):
+                        mayor=num3
                 elif float(num3)>float(num1):
                     mayor=num3
                 print(mayor, "es el numero mayor de los 3 ingresados")
@@ -121,6 +123,8 @@ def miscelanea(Tema):
                 menor=num1
                 if float(num2)<float(num1):
                     menor=num2
+                    if float(num3)<float(num2):
+                        menor=num3
                 elif float(num3)<float(num1):
                     menor=num3
                 print(menor, "es el numero menor de los 3 ingresados")
