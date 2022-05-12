@@ -1,0 +1,7 @@
+C:\Users\jh25\SENA_ADSI\C#\Taller2.5\bin\Debug\Taller2.5.exe.config
+C:\Users\jh25\SENA_ADSI\C#\Taller2.5\bin\Debug\Taller2.5.exe
+C:\Users\jh25\SENA_ADSI\C#\Taller2.5\bin\Debug\Taller2.5.pdb
+C:\Users\jh25\SENA_ADSI\C#\Taller2.5\obj\Debug\Taller2.5.csproj.AssemblyReference.cache
+C:\Users\jh25\SENA_ADSI\C#\Taller2.5\obj\Debug\Taller2.5.csproj.CoreCompileInputs.cache
+C:\Users\jh25\SENA_ADSI\C#\Taller2.5\obj\Debug\Taller2.5.exe
+C:\Users\jh25\SENA_ADSI\C#\Taller2.5\obj\Debug\Taller2.5.pdb
