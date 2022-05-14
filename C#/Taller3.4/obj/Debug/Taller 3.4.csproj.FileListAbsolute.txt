@@ -1,0 +1,12 @@
+C:\Users\sena\source\repos\Taller 3.4\bin\Debug\Taller 3.4.exe.config
+C:\Users\sena\source\repos\Taller 3.4\bin\Debug\Taller 3.4.exe
+C:\Users\sena\source\repos\Taller 3.4\bin\Debug\Taller 3.4.pdb
+C:\Users\sena\source\repos\Taller 3.4\obj\Debug\Taller 3.4.csprojAssemblyReference.cache
+C:\Users\sena\source\repos\Taller 3.4\obj\Debug\Taller 3.4.exe
+C:\Users\sena\source\repos\Taller 3.4\obj\Debug\Taller 3.4.pdb
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.4\bin\Debug\Taller 3.4.exe.config
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.4\bin\Debug\Taller 3.4.exe
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.4\bin\Debug\Taller 3.4.pdb
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.4\obj\Debug\Taller 3.4.csproj.CoreCompileInputs.cache
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.4\obj\Debug\Taller 3.4.exe
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.4\obj\Debug\Taller 3.4.pdb

@@ -1,0 +1,6 @@
+C:\Users\sena\Desktop\Taller3.1\Taller3.1\bin\Debug\Taller3.1.exe.config
+C:\Users\sena\Desktop\Taller3.1\Taller3.1\bin\Debug\Taller3.1.exe
+C:\Users\sena\Desktop\Taller3.1\Taller3.1\bin\Debug\Taller3.1.pdb
+C:\Users\sena\Desktop\Taller3.1\Taller3.1\obj\Debug\Taller3.1.csprojAssemblyReference.cache
+C:\Users\sena\Desktop\Taller3.1\Taller3.1\obj\Debug\Taller3.1.exe
+C:\Users\sena\Desktop\Taller3.1\Taller3.1\obj\Debug\Taller3.1.pdb

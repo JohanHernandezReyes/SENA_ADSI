@@ -1,0 +1,13 @@
+C:\Users\sena\Desktop\Taller 3.3\obj\Debug\Taller 3.3.csprojAssemblyReference.cache
+C:\Users\sena\Desktop\Taller 3.3\bin\Debug\Taller 3.3.exe.config
+C:\Users\sena\Desktop\Taller 3.3\bin\Debug\Taller 3.3.exe
+C:\Users\sena\Desktop\Taller 3.3\bin\Debug\Taller 3.3.pdb
+C:\Users\sena\Desktop\Taller 3.3\obj\Debug\Taller 3.3.exe
+C:\Users\sena\Desktop\Taller 3.3\obj\Debug\Taller 3.3.pdb
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.3\bin\Debug\Taller 3.3.exe.config
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.3\bin\Debug\Taller 3.3.exe
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.3\bin\Debug\Taller 3.3.pdb
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.3\obj\Debug\Taller 3.3.csproj.AssemblyReference.cache
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.3\obj\Debug\Taller 3.3.csproj.CoreCompileInputs.cache
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.3\obj\Debug\Taller 3.3.exe
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.3\obj\Debug\Taller 3.3.pdb

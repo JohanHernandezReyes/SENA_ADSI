@@ -1,0 +1,12 @@
+C:\Users\sena\source\repos\taller 3.5\bin\Debug\taller 3.5.exe.config
+C:\Users\sena\source\repos\taller 3.5\bin\Debug\taller 3.5.exe
+C:\Users\sena\source\repos\taller 3.5\bin\Debug\taller 3.5.pdb
+C:\Users\sena\source\repos\taller 3.5\obj\Debug\taller 3.5.csprojAssemblyReference.cache
+C:\Users\sena\source\repos\taller 3.5\obj\Debug\taller 3.5.exe
+C:\Users\sena\source\repos\taller 3.5\obj\Debug\taller 3.5.pdb
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.5\bin\Debug\taller 3.5.exe.config
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.5\bin\Debug\taller 3.5.exe
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.5\bin\Debug\taller 3.5.pdb
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.5\obj\Debug\taller 3.5.csproj.CoreCompileInputs.cache
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.5\obj\Debug\taller 3.5.exe
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller3.5\obj\Debug\taller 3.5.pdb
