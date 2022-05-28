@@ -1,0 +1,7 @@
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller_Arrays\bin\Debug\Taller_Arrays_Metodos.exe.config
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller_Arrays\bin\Debug\Taller_Arrays_Metodos.exe
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller_Arrays\bin\Debug\Taller_Arrays_Metodos.pdb
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller_Arrays\obj\Debug\Taller_Arrays.csproj.AssemblyReference.cache
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller_Arrays\obj\Debug\Taller_Arrays.csproj.CoreCompileInputs.cache
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller_Arrays\obj\Debug\Taller_Arrays_Metodos.exe
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Taller_Arrays\obj\Debug\Taller_Arrays_Metodos.pdb

@@ -14,11 +14,11 @@ namespace Taller2
             int num2 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Indique la operacion a realizar (suma, resta o multiplicacion");
-            string opcion = Console.ReadLine();
+            string opcion = Console.ReadLine().ToUpper();
 
-            Operacion O = new Operacion();
+            Operacion O = new Operacion(num1, num2);
 
-            Console.WriteLine("\nEl resultado de la " + opcion + " es: " + O.Operaciones(opcion, num1, num2));
+            Console.WriteLine("\nEl resultado de la " + opcion + " es: " + O.Operaciones(opcion));
             Console.ReadLine();
         }
     }

@@ -1,0 +1,7 @@
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\TallerMetodos\obj\Debug\TallerMetodos.csproj.AssemblyReference.cache
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\TallerMetodos\obj\Debug\TallerMetodos.csproj.CoreCompileInputs.cache
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\TallerMetodos\bin\Debug\TallerMetodos.exe.config
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\TallerMetodos\bin\Debug\TallerMetodos.exe
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\TallerMetodos\bin\Debug\TallerMetodos.pdb
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\TallerMetodos\obj\Debug\TallerMetodos.exe
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\TallerMetodos\obj\Debug\TallerMetodos.pdb

@@ -1,33 +1,39 @@
 ﻿using System;
-using static Taller2.Suma;
-using static Taller2.Resta;
-using static Taller2.Multiplicacion;
 
 namespace Taller2
 {
     public class Operacion
     {
-        public int Operaciones(string opcion, int num1, int num2)
+        public int num1, num2;
+
+        public Operacion(int Num1, int Num2)
+        {
+            num1=Num1;
+            num2=Num2;
+        }
+
+
+        public int Operaciones(string opcion)
         {
             int resultado=0;
 
-            if (opcion=="suma")
+            if (opcion=="SUMA")
             {
-                Suma s = new Suma();
-                resultado= s.Sumar(num1, num2);
+                Suma s = new Suma(num1, num2);
+                resultado= s.Sumar();
 
             }
 
-            else if (opcion == "resta")
+            else if (opcion == "RESTA")
             {
-                Resta r = new Resta();
-                resultado = r.Restar(num1, num2);
+                Resta r = new Resta(num1, num2);
+                resultado = r.Restar();
             }
 
-            else if (opcion == "multiplicacion")
+            else if (opcion == "MULTIPLICACION")
             {
-                Multiplicacion m = new Multiplicacion();
-                resultado = m.Multiplicar(num1, num2);
+                Multiplicacion m = new Multiplicacion(num1, num2);
+                resultado = m.Multiplicar();
             }
 
             return resultado;
