@@ -17,8 +17,8 @@ namespace JuegoDados
             Console.WriteLine("Lanzando el dado numero " + numdado + "...");
             Thread.Sleep(1);
             Random R = new Random();
-            int resultado = R.Next(1, 7);
-            return resultado;
+            
+            return R.Next(1, 7);
         }
     }
 }

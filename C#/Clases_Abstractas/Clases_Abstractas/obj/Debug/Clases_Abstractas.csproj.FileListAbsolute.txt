@@ -1,0 +1,7 @@
+C:\Users\sena\Desktop\A\SENA_ADSI\C#\Clases_Abstractas\Clases_Abstractas\obj\Debug\Clases_Abstractas.csproj.AssemblyReference.cache
+C:\Users\sena\Desktop\A\SENA_ADSI\C#\Clases_Abstractas\Clases_Abstractas\obj\Debug\Clases_Abstractas.csproj.CoreCompileInputs.cache
+C:\Users\sena\Desktop\A\SENA_ADSI\C#\Clases_Abstractas\Clases_Abstractas\bin\Debug\Clases_Abstractas.exe.config
+C:\Users\sena\Desktop\A\SENA_ADSI\C#\Clases_Abstractas\Clases_Abstractas\bin\Debug\Clases_Abstractas.exe
+C:\Users\sena\Desktop\A\SENA_ADSI\C#\Clases_Abstractas\Clases_Abstractas\bin\Debug\Clases_Abstractas.pdb
+C:\Users\sena\Desktop\A\SENA_ADSI\C#\Clases_Abstractas\Clases_Abstractas\obj\Debug\Clases_Abstractas.exe
+C:\Users\sena\Desktop\A\SENA_ADSI\C#\Clases_Abstractas\Clases_Abstractas\obj\Debug\Clases_Abstractas.pdb

@@ -5,3 +5,10 @@ H:\Mi unidad\Portafolio_Evidencias_Johan_Hernandez\Ficha 2450482-ADSI\4_EVIDENCI
 H:\Mi unidad\Portafolio_Evidencias_Johan_Hernandez\Ficha 2450482-ADSI\4_EVIDENCIAS_DE_APRENDIZAJE\Trim 2\Programacion\C#\JuegoDados\obj\Debug\JuegoDados.exe
 H:\Mi unidad\Portafolio_Evidencias_Johan_Hernandez\Ficha 2450482-ADSI\4_EVIDENCIAS_DE_APRENDIZAJE\Trim 2\Programacion\C#\JuegoDados\obj\Debug\JuegoDados.pdb
 H:\Mi unidad\Portafolio_Evidencias_Johan_Hernandez\Ficha 2450482-ADSI\4_EVIDENCIAS_DE_APRENDIZAJE\Trim 2\Programacion\C#\JuegoDados\obj\Debug\JuegoDados.csproj.AssemblyReference.cache
+C:\Users\sena\Desktop\JuegoDados\bin\Debug\JuegoDados.exe.config
+C:\Users\sena\Desktop\JuegoDados\bin\Debug\JuegoDados.exe
+C:\Users\sena\Desktop\JuegoDados\bin\Debug\JuegoDados.pdb
+C:\Users\sena\Desktop\JuegoDados\obj\Debug\JuegoDados.csproj.AssemblyReference.cache
+C:\Users\sena\Desktop\JuegoDados\obj\Debug\JuegoDados.csproj.CoreCompileInputs.cache
+C:\Users\sena\Desktop\JuegoDados\obj\Debug\JuegoDados.exe
+C:\Users\sena\Desktop\JuegoDados\obj\Debug\JuegoDados.pdb
