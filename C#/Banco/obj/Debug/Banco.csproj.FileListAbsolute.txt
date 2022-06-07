@@ -1,0 +1,7 @@
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Banco\obj\Debug\Banco.csproj.CoreCompileInputs.cache
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Banco\bin\Debug\Banco.exe.config
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Banco\bin\Debug\Banco.exe
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Banco\bin\Debug\Banco.pdb
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Banco\obj\Debug\Banco.exe
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Banco\obj\Debug\Banco.pdb
+C:\Users\jh25\SENA_ADSI\SENA_ADSI\C#\Banco\obj\Debug\Banco.csproj.AssemblyReference.cache
