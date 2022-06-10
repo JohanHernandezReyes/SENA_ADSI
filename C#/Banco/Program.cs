@@ -6,7 +6,13 @@ namespace Banco
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("BIENVENIDO AL CAJERO DE SU BANCO");
+            Banco Mibanco = new Banco();
+            double[] valores;
+            int trans;
+
+		Console.WriteLine("BIENVENIDO A SU BANCO");
+		Mibanco.crearclientes();
+
             Console.WriteLine("ingrese el codigo del cliente o 0 para salir");
             int codigo = int.Parse(Console.ReadLine());
             while (codigo > 3)
@@ -15,9 +21,7 @@ namespace Banco
                 codigo = int.Parse(Console.ReadLine());
             }
 
-            Banco Mibanco = new Banco();
-            double[] valores;
-            int trans;
+            
 
             while (codigo > 0)
             {
