@@ -12,13 +12,13 @@ function validarconfirm(password, confirm) {
     }
 }
 
-function Validar(email, callbackFunction) {
+function Validar(email, callbackFunction){
     $.ajax({
         url: "http://localhost:8081/user/all",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta) {
-            console.log(respuesta);
+            //console.log(respuesta);
             callbackFunction(email, respuesta);
         }
     });   
@@ -30,12 +30,12 @@ function ListaUsuarios(email, respuesta){
     for (i = 0; i < respuesta.length; i++) {
         listusers.push(respuesta[i].email);
     }
-    console.log(listusers);
+    //console.log(listusers);
     u = email;
-    console.log(u);
+    //console.log(u);
     if (listusers.includes(u) && u!=null) {
         alert("El email ya se encuentra registrado");
-        throw exit;
+        throw 'exit';
     }else{
         NuevoUsuario();
     }
@@ -43,12 +43,13 @@ function ListaUsuarios(email, respuesta){
 
 function idusuario(email, respuesta){
     
-    emails=[];       
+    listemails=[];       
     for (i = 0; i < respuesta.length; i++) {
-        emails.push(respuesta[i].email);
+        listemails.push(respuesta[i].email);
     }
-    id = emails.indexOf(email)+1;
-    return id;
+    id = listemails.indexOf(email)+1;
+    localStorage.setItem("idnewuser", id);
+    //console.log(localStorage.getItem("idnewuser"));
 }
 
 function NuevoUsuario() {
@@ -58,12 +59,14 @@ function NuevoUsuario() {
     validarvacio($("#password").val(), "Debe ingresar una contraseña");
     validarvacio($("#confirm").val(), "Por favor confirme su contraseña");
     validarconfirm($("#password").val(), $("#confirm").val());
-    
+
+    clave=Encrypt($("#password").val());
+
     let myData = {
         name: $("#name").val(),
+        password: clave,
         email: $("#email").val().toLowerCase(),
-        password: $("#password").val(),
-        idrol: 3,
+        tblroles: {idrol: 3}
     };
     let dataToSend = JSON.stringify(myData);
     $.ajax({
@@ -73,15 +76,15 @@ function NuevoUsuario() {
         contentType: "application/JSON",
         datatype: "JSON",
         success: function (respuesta) {
-            console.log(respuesta);
+            //console.log(respuesta);
             $("#name").val("");
             $("#email").val("");
             $("#password").val("");
             $("#confirm").val("");
-            alert("se ha guardado el dato");
             document.getElementById("formregistro").setAttribute("hidden", "true");
-            document.getElementById("bt").setAttribute("hidden", "true");
-            $("#msj").html("Se ha registrado con éxito. Ahora puede ingresar");
+            document.getElementById("h2registro").setAttribute("hidden", "true");
+            document.getElementById("linkdatoscliente").removeAttribute("hidden");
+            document.getElementById("linksign3").removeAttribute("hidden");
         }
     });
     
@@ -89,6 +92,8 @@ function NuevoUsuario() {
 
 function guardarUsuario(){
     Validar($("#email").val().toLowerCase(), ListaUsuarios);
+    localStorage.setItem("emailnewuser", $("#email").val().toLowerCase());  
+    localStorage.setItem("namenewuser", $("#name").val());  
 }
      
 
@@ -102,7 +107,7 @@ function ValidarUsuario(email){
         contentType: "application/JSON",
         datatype: "JSON",
         success: function (respuesta) {
-            console.log(respuesta);
+            //console.log(respuesta);
             if (respuesta == false) {
                 alert("Usuario no existe en la base de datos");
             } 
@@ -114,26 +119,27 @@ function ValidarUsuario(email){
 
 function Autenticacion(email, password) {
     ValidarUsuario(email);
-    let myData = (email + "/" + password); console.log(myData);
+    var hash = md5(password);
+    console.log(hash); 
     validarvacio($("#uemail").val(), "Debe ingresar un e-mail");
     validarvacio($("#upassword").val(), "Debe ingresar una contraseña valida");
     $.ajax({
-        url: "http://localhost:8081/user/" + email + "/" + password,
+        url: "http://localhost:8081/user/" + email + "/" + hash,
         type: "GET",
         data: email + "/" + password,
         contentType: "application/JSON",
         datatype: "JSON",
         success: function (respuesta) {
-            console.log(respuesta);
+            //console.log(respuesta);
             $("#uemail").val("");
             $("#upassword").val("");
             if (respuesta.name == "NO DEFINIDO") {
                 alert("Usuario o clave incorrectos");
             } else {
                 document.getElementById("formlogin").setAttribute("hidden", "true");
-                document.getElementById("btnlog").setAttribute("hidden", "true");
-                document.getElementById("reglink").setAttribute("hidden", "true");
-                $("#welcome").html("Bienvenido "+respuesta.name);
+                document.getElementById("titulologin").setAttribute("hidden", "true");
+                document.getElementById("welcome").removeAttribute("hidden");
+                document.getElementById("welcome").innerHTML="Bienvenido "+respuesta.name+". Ahora puede comenzar su búsqueda de locaciones! ";
             }
 
         }
@@ -150,7 +156,7 @@ function validarcliente(NIT){
         contentType: "application/JSON",
         datatype: "JSON",
         success: function (respuesta) {
-            console.log(respuesta);
+            //console.log(respuesta);
             if (respuesta == true) {
                 alert("El cliente ya se encuentra registrado en la base de datos, inicie sesión con sus credenciales");
             } 
@@ -160,36 +166,37 @@ function validarcliente(NIT){
 
 function guardarcliente(){
    
-    validarcliente($("#NIT").val()); 
-    guardarUsuario();
-         
+    validarcliente($("#NIT").val());          
     validarvacio($("#NIT").val(), "Debe ingresar un numero de identificación");
     validarvacio($("#tel").val(), "Debe ingresar un numero de contacto");
     validarvacio($("#direcc").val(), "Debe ingresar una dirección");
     validarvacio($("#ciudad").val(), "Elija un valor para la ciudad");
     validarvacio($("#tipoID").val(), "Elija un valor para tipo de documento");
      
-    var iduser=Validar($("#email").val().toLowerCase(), idusuario);
-     
+    Validar(localStorage.getItem("emailnewuser"), idusuario);
+
+    var fecha=new Date().toISOString(); 
+    
     let myData = {
         nit: $("#NIT").val(),
-        name: $("#name").val(),
+        name: localStorage.getItem("namenewuser"),
         tel: $("#tel").val().toLowerCase(),
         direccion: $("#direcc").val(),
-        fechareg: Date.now(),
-        tblusuarios:{id: iduser},
-        idciudad:$("#ciudad").val(),
-        tipoid:$("#tipoID").val()        
+        fechareg: fecha.substring(0,10),
+        tblciudad:{idciudad: parseInt($("#ciudad").val())},
+        tblusuarios:{id: parseInt(localStorage.getItem("idnewuser"))},
+        tbltipoid:{idtipoid: parseInt($("#tipoID").val())}        
     };
     let dataToSend = JSON.stringify(myData);
+    //console.log(dataToSend);
     $.ajax({
-        url: "http://localhost:8081/user/new",
+        url: "http://localhost:8081/customer/new",
         type: "POST",
         data: dataToSend,
         contentType: "application/JSON",
         datatype: "JSON",
         success: function (respuesta) {
-            console.log(respuesta);
+            //console.log(respuesta);
             $("#name").val("");
             $("#email").val("");
             $("#password").val("");
@@ -200,9 +207,14 @@ function guardarcliente(){
             $("#ciudad").val("");
             $("#tipoID").val("");
             alert("se ha guardado el cliente");
-            document.getElementById("formregistro").setAttribute("hidden", "true");
-            document.getElementById("bt").setAttribute("hidden", "true");
-            $("#msj").html("Se ha registrado con éxito. Ahora puede ingresar");
+            document.getElementById("formregistro2").setAttribute("hidden", "true");
+            document.getElementById("linksign2").removeAttribute("hidden");
         }
     });
 }
+
+function Encrypt(password){
+    var hash = md5(password);
+    return hash;
+}
+

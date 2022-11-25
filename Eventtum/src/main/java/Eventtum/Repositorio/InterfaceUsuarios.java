@@ -9,4 +9,7 @@ public interface InterfaceUsuarios extends CrudRepository<Usuarios, Integer>{
     
     public Optional <Usuarios> findByEmail(String email);
     public Optional <Usuarios> findByPassword(String password);
+    
+   
+    
 }

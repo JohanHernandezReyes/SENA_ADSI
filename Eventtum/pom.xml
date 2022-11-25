@@ -14,7 +14,7 @@
 	<name>Eventtum</name>
 	<description>Proyecto Alquiler de Locaciones</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>13</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -37,9 +37,9 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<groupId>com.mysql</groupId>
-			<artifactId>mysql-connector-j</artifactId>
-			<scope>runtime</scope>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+                        <version>8.0.31</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

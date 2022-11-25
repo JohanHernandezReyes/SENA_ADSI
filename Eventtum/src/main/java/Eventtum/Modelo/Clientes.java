@@ -18,7 +18,7 @@ public class Clientes implements Serializable{
     @Column(name= "idcliente")
     private Integer idCliente;
     
-    @Column(name= "NIT")
+    @Column(name= "cli_identificacion")
     private String NIT;
     
     @Column(name= "clinombre_razonsocial")
@@ -33,14 +33,19 @@ public class Clientes implements Serializable{
     @Column(name="clifecharegistro")
     private Date fechareg;
     
-    @Column(name= "tblciudad_idciudad")
-    private Integer idCiudad;
+    @ManyToOne
+    @JoinColumn(name="tblciudad_idciudad")
+    @JsonIgnoreProperties("clientesciu")
+    private Ciudades tblciudad;
     
     @OneToOne
-    @JsonIgnoreProperties("Clientes")
+    @JsonIgnoreProperties("cliente")
     private Usuarios tblusuarios; 
     
-    @Column(name= "tbltipoid_idtipoid")
-    private Integer tipoID;
+    @ManyToOne
+    @JoinColumn(name="tbltipoid_idtipoid")
+    @JsonIgnoreProperties("clientestip")
+    private Tipoid tbltipoid;
     
+ 
 }
