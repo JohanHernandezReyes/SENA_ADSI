@@ -3,17 +3,25 @@ package Controlador;
 
 import java.awt.event.*;
 import java.util.Date;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.swing.JOptionPane;
 //import java.text.*;
 
 public abstract class PacienteControl implements ActionListener{
     
     Vista.RegPacienteIF pacienteVista;
-    Modelo.Paciente pacienteModelo;
-    Modelo.GestorPaciente gestorpacienteModelo;
+    Modelo.Pacientes pacienteModelo;
+    PacientesJpaController gestorPacienteModelo;
+    //Modelo.Paciente pacienteModelo;
+    //Modelo.GestorPaciente gestorpacienteModelo;
+    
     
     public PacienteControl(Vista.RegPacienteIF pacienteVista){
-        this.pacienteVista = pacienteVista;
-        gestorpacienteModelo = new Modelo.GestorPaciente();
+        this.pacienteVista = pacienteVista;      
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("ProyectoCitasPU");
+        gestorPacienteModelo = new PacientesJpaController(emf);
+        //gestorpacienteModelo = new Modelo.GestorPaciente();
     }
     
     @Override
@@ -22,19 +30,28 @@ public abstract class PacienteControl implements ActionListener{
             String id = pacienteVista.txt_identificacion.getText();
             String nombre = pacienteVista.txt_nombres.getText();
             String apellido = pacienteVista.txt_apellidos.getText();
-            String sexo = " ";
+            Character sexo = ' ';
             //SimpleDateFormat f = new SimpleDateFormat("dd/MM/yy");
             Date Fechanac = pacienteVista.Dtd_fechanac.getDate();
         
             if(pacienteVista.rdb_masculino.isSelected()){
-                sexo="M";
+                sexo='M';
             }
             
             if(pacienteVista.rdb_femenino.isSelected()){
-                sexo="F";
+                sexo='F';
             }
-            pacienteModelo=new Modelo.Paciente(id,nombre,apellido,sexo,Fechanac);
-            gestorpacienteModelo.RegistrarPacientes(pacienteModelo);
+            //pacienteModelo=new Modelo.Paciente(id,nombre,apellido,sexo,Fechanac);
+            //gestorpacienteModelo.RegistrarPacientes(pacienteModelo);
+            
+            pacienteModelo=new Modelo.Pacientes(id,nombre,apellido,sexo,Fechanac);
+            try {
+                gestorPacienteModelo.create(pacienteModelo);
+                JOptionPane.showMessageDialog(pacienteVista,"Paciente registrado correctamente");
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(pacienteVista,ex.getMessage());
+            }
+            
         }
         
         if(e.getSource().equals(pacienteVista.NewButton)){

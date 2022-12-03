@@ -59,6 +59,11 @@ public class ConsPacientesIF extends javax.swing.JInternalFrame {
 
         buttonGroup1.add(rdb_nombres);
         rdb_nombres.setText("Nombres");
+        rdb_nombres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdb_nombresActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Valor a Buscar:");
 
@@ -154,6 +159,10 @@ public class ConsPacientesIF extends javax.swing.JInternalFrame {
     private void rdb_sexoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdb_sexoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rdb_sexoActionPerformed
+
+    private void rdb_nombresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdb_nombresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rdb_nombresActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
