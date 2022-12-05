@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+
+header{
+
+    background-color: orange;
+    padding: 0px;
+
+}
+
+nav{
+    
+    padding: 2px;
+    
+}
+
+.link-nav{
+    margin-right: 100px;
+    font-size: x-large;
+    font-family: fantasy;
+}
+
+img{
+    margin-left: 5px;
+    margin-top: 5px ;
+    width: 250px;
+}
+
+.pagina{
+    margin-left: 5px;
+    margin-top: 5px ;
+    width: 500px;
+    margin-bottom: 10px;
+    padding: auto;
+    size-adjust: auto;
+}
+
+
+
+.box{
+    border-radius: 5%;
+    border-color: orange;
+    border-width: 3px;
+    border-style:double;
+    padding: auto;
+    
+}
+
+.boton{
+    width: 150px;
+    border-radius: 15px;
+    background-color: #1878c1;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 4px solid gray;
+    margin-left: 250px;
+}
