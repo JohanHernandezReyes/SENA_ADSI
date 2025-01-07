@@ -1,0 +1,12 @@
+C:\Users\Sena\Desktop\Kronoapp\Kronoapp\obj\Debug\Kronoapp.Form1.resources
+C:\Users\Sena\Desktop\Kronoapp\Kronoapp\obj\Debug\Kronoapp.Resources.resources
+C:\Users\Sena\Desktop\Kronoapp\Kronoapp\obj\Debug\Kronoapp.vbproj.GenerateResource.cache
+C:\Users\Sena\Desktop\Kronoapp\Kronoapp\obj\Debug\Kronoapp.vbproj.CoreCompileInputs.cache
+C:\Users\Sena\Desktop\Kronoapp\Kronoapp\bin\Debug\Kronoapp.exe.config
+C:\Users\Sena\Desktop\Kronoapp\Kronoapp\bin\Debug\Kronoapp.exe
+C:\Users\Sena\Desktop\Kronoapp\Kronoapp\bin\Debug\Kronoapp.pdb
+C:\Users\Sena\Desktop\Kronoapp\Kronoapp\bin\Debug\Kronoapp.xml
+C:\Users\Sena\Desktop\Kronoapp\Kronoapp\obj\Debug\Kronoapp.exe
+C:\Users\Sena\Desktop\Kronoapp\Kronoapp\obj\Debug\Kronoapp.xml
+C:\Users\Sena\Desktop\Kronoapp\Kronoapp\obj\Debug\Kronoapp.pdb
+C:\Users\Sena\Desktop\Kronoapp\Kronoapp\obj\Debug\Kronoapp.vbproj.AssemblyReference.cache
